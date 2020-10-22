@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import {useState} from 'react';
 
@@ -51,11 +51,14 @@ function App() {
   }
   
   const reset=() => {
+    setHeaderMsg("Vuorossa pelaaja X");
     setPelaaja("X"); 
     setBoardArray([null, null, null,
                    null, null, null, 
                    null, null, null]);
   }
+
+
 
   // JSX
   return (
